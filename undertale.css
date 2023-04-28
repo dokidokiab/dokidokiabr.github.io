@@ -1,0 +1,119 @@
+
+
+.titulo img:hover{
+    width: 70%;
+    transition: 2s;
+
+}
+
+.titulo img{
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 20px 20px 60px rgb(85, 55, 57),
+                  -20px -20px 6rgb(65, 11, 11)
+}
+
+h3{
+    font-family: Determination Mono Web;
+    display: inline-block;
+
+    width: 700px;
+
+}
+.tobyfox{
+    margin: 0 auto;
+}
+
+.savepoint{
+    margin-top: 20px;
+}
+
+.saveimg{
+    width: 19px;
+    height: 19px;
+    background-image: url(save1.png);
+    animation: savepoint .75s infinite;
+}
+
+
+.titulo{
+    margin: auto;
+    width: 50%;
+    display: inline-block;
+}
+
+p, h3, h2, h1{
+    font-family: Determination Mono Web;
+    color: white;
+
+}
+
+.rotas{
+    margin-top: 50px;
+}
+
+.rotas h2{
+    margin: 150px;
+    position:static;
+    display:inline;
+}
+
+.rotas img{
+    position: relative;
+    margin: 100px;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+.rotas img:hover{
+    scale: 1.1;
+    transition: 2s;
+}
+
+.asriel{
+    width: 15%;
+
+}
+
+.flowey{
+    width: 15%;
+}
+
+.sans{
+    width: 12%;
+}
+
+
+
+.digitando{
+    display: inline-block;
+    font-family: Determination Mono Web;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 10px;
+    border-right: 2px solid white;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+body{
+    background-color: rgba(0, 0, 0);
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: white;}
+}
+
+@keyframes savepoint {
+    from {background-image: url(save1.png)}
+    to {background-image: url(save2.png);}
+}
