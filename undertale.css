@@ -114,6 +114,6 @@ body{
 }
 
 @keyframes savepoint {
-    from {background-image: url(save1.png)}
-    to {background-image: url(save2.png);}
+    from {background-image: url(images/save1.png)}
+    to {background-image: url(images/save2.png);}
 }
