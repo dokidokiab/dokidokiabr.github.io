@@ -4,56 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="undertale.css">
+    <link rel="stylesheet" href="stylesheets/routes.css">
     <link rel="shortcut icon" href="images/heart.png" type="image/x-icon">
     <title>pacifista</title>
 </head>
 <body>
-    <div class="titulo">
+    <div class="header" align="center">
+        <div class="credits">
+            <a href="https://twitter.com/dokidokiabr"><p class="ref">@dokidokiabr</p></a>
+            <img class="chara" src="images/CharaKNIFE.webp" alt="">
+        </div>
         <link rel="stylesheet" href="index.html">
         <a href="index.html">   
-            <img src="images/Undertale-Logo-PNG.png" alt="">
+            <img class="title-image" src="images/Undertale-Logo-PNG.png" alt="">
         </a> 
         <p class="tobyfox">by Toby Fox</p>
     </div>
-    <div class="savepoint">
-        <div class="saveimg"></div>
-
-        <h2 class="digitando">Que lindo! Você escolheu não matar ninguém.</h2>
-    </div>
-
+    <div class="finaltext" align="center">
     <p>
     Antes da sua batalha final nesta rota, você
     recebe uma ligação num Elevador:    
     </p>
-    <blockquote>
+    <blockquote> <i>
         — Tudo se encaixou!
-        (seu nome), verei você em breve!
+        (seu nome), verei você em breve!</i>
     </blockquote>
 
     <p>
-        Então ao sair de lá, você encontra Asgore, o rei.
+        Então ao sair de lá, você encontra Asgore, o rei. <br>
         Porém, todos os outros amigos/bosses da história aparecem
-        para intervir. E um deles revela que uma flor os ajudou a 
+        <br>para intervir. E um deles revela que uma flor os ajudou a 
         chegar ali.
     </p>
+    </div>
 
     <h2>Em seguida ela aparece.</h2>
-    
-    <div align="center">
-        <img src="images/floweyPACIFIST.webp" alt="">
-        
-        <h3>Se transformando no Asriel, e absorvendo as 6 almas das crianças que morreram ali</h3>
-        <img  src="images/Flowey_absorbing_SOULs.webp" alt="">
-        <img  src="images/Asriel_Dreemurr_battle_final_form.webp" alt="">
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div id="slide1">
+                    
+                    <img src="images/floweyPACIFIST.webp" alt="">
+                    <p>Se transformando no Asriel, e absorvendo as 6 almas das crianças que morreram ali</p>
+                </div>
+                
+                <div id="slide2">
+                    <img  src="images/Flowey_absorbing_SOULs.webp" alt="">
+                    <img  src="images/Asriel_Dreemurr_battle_final_form.webp" alt="">
+                    <p>Aqui, após você matar todos os monstros possíveis,<br>o Sans te esperará no último corredor...</p>
+                </div>
+                
+                <div id="slide3">
+                            
+                    <p>Mas apesar de tudo, você consegue resolver essa batalha e sair do mundo dos monstros</p>
+                    <img src="images/truepacifistEND.jpg" alt="">
+                    <p>Este final pode ser considerado o "final verdadeiro" para Undertale, levando a uma conclusão feliz e os créditos completos.</p>
+                </div>
+                
 
-        <p>Mas apesar de tudo, você consegue resolver essa batalha e sair do mundo dos monstros</p>
-        <img src="images/truepacifistEND.jpg" alt="">
-        <p>Este final pode ser considerado o "final verdadeiro" para Undertale, levando a uma conclusão feliz e os créditos completos.</p>
-    </div>
-    <div align="left">
-        <a href="https://twitter.com/dokidokiabr"><p class="ref">@dokidokiabr</p></a>
-        <img class="chara" src="images/CharaKNIFE.webp" alt="">
-    </div>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

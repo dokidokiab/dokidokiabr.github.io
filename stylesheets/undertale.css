@@ -1,0 +1,137 @@
+
+.header{
+    background: rgba(0, 0, 0);
+    margin: 0;
+    height: 70px;
+    vertical-align: center;
+}
+
+.credits{
+    display: block;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.title-image{
+    display: inline-block;
+    width: 20%;
+}
+
+.chara{
+    max-width: 6%;
+    max-height: 6%;
+    margin: 0%;
+    float: left;
+}
+
+.ref{
+    position: absolute;
+    margin: 0%;
+    float: left;
+}
+
+
+.tobyfox{
+    margin: 0;
+}
+
+.savepoint{
+    margin-top: 20px;
+}
+
+.saveimg{
+    width: 19px;
+    height: 19px;
+    background-image: url(images/save1.png);
+    animation: savepoint .75s infinite;
+}
+
+
+
+p, h3, h2, h1, blockquote{
+    font-family: Determination Mono Web;
+    color: white;
+
+}
+
+.question{
+    padding-top: 20px;
+}
+
+
+.title-container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas com tamanhos iguais */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+}
+
+
+.image-container {
+    display: flex; /* Use flexbox to arrange images horizontally */
+    justify-content: space-between; /* Distribute space between images */
+}
+
+.image-container img{
+    max-width: 100%;
+    height: auto;
+}
+
+.rotas{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.938);
+    border-radius: 50px;
+    height: 450px;
+    width: 1200px;
+    
+}
+
+.rotas img{
+    padding: 0 100px;
+}
+
+.rotas img:hover{
+    scale: 1.1;
+    transition: 1s;
+    transform: translateY(-20px);
+}
+
+.rotas img:hover > .rotas{
+    background-color: rgba(0, 0, 0, 0.938);
+    transition: 1s;
+}
+
+.digitando{
+    display: inline-block;
+    font-family: Determination Mono Web;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 10px;
+    border-right: 2px solid white;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+body{
+    background-image: url('/images/ruinsbackground.jpg');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evita repetir a imagem */
+}
+
+
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: white;}
+}
+
+@keyframes savepoint {
+    from {background-image: url(images/save1.png)}
+    to {background-image: url(images/save2.png);}
+}
+
